@@ -1,19 +1,19 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Loader from '@/components/Loader'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Loader from "@/components/Loader";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: '403Labs - Web Development Experts',
-  description: 'We create stunning websites that drive results',
-}
+  title: "403Labs - Web Development Experts",
+  description: "We create stunning websites that drive results",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className="scroll-smooth dark">
@@ -22,6 +22,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }
-
